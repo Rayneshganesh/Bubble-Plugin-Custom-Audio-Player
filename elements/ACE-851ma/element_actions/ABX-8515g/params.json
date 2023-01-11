@@ -1,0 +1,15 @@
+{
+    "caption": "PlaybackRate",
+    "doc": "Sets or returns the speed of the audio playback",
+    "fields": {
+        "ABY": {
+            "caption": "PlaybackRate",
+            "default_val": 100,
+            "doc": "Sets or returns the speed of the audio playback",
+            "editor": "DynamicValue",
+            "name": "speed",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

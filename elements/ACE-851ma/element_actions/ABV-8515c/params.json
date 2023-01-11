@@ -1,0 +1,15 @@
+{
+    "caption": "Volume",
+    "doc": "Sets or returns the audio volume of an audio",
+    "fields": {
+        "ABW": {
+            "caption": "Volume",
+            "default_val": 1,
+            "doc": "The value must be between 0 (mute) and 1 (max volume). Does not work on iOS.",
+            "editor": "DynamicValue",
+            "name": "volume",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

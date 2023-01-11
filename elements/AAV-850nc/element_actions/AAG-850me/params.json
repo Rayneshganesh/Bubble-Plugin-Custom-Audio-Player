@@ -1,0 +1,15 @@
+{
+    "caption": "Start",
+    "doc": "Start recording audio",
+    "fields": {
+        "AAH": {
+            "caption": "Time Max",
+            "doc": "When the time defined in the \"Time Max\" field runs out, the Time Ended event is triggered, and you can trigger the Stop action. If you don't want to set a time, just leave this field empty.",
+            "editor": "DynamicValue",
+            "name": "max",
+            "optional": true,
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

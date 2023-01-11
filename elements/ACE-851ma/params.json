@@ -1,0 +1,201 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 35,
+        "width": 200
+    },
+    "display": "Audio Player",
+    "events": {
+        "ABi": {
+            "caption": "Ended",
+            "doc": "When the audio reaches it's maximum length",
+            "name": "ended"
+        },
+        "ABj": {
+            "caption": "Error",
+            "doc": "If the audio file is not compatible this event is triggered",
+            "name": "error"
+        }
+    },
+    "fields": {
+        "ABk": {
+            "caption": "Audio File",
+            "doc": "Enter the audio file or URL here.",
+            "editor": "DynamicValue",
+            "name": "src",
+            "optional": true,
+            "rank": 0,
+            "value": "file"
+        },
+        "ABl": {
+            "caption": "Auto Play",
+            "default_val": false,
+            "doc": "Sets or returns whether the audio should start playing as soon as it is ready. Does not work on iOS.",
+            "editor": "Checkbox",
+            "name": "autoplay",
+            "rank": 1
+        },
+        "ABm": {
+            "caption": "Loop",
+            "default_val": false,
+            "doc": "Sets or returns whether the audio should start playing over again, every time it is finished",
+            "editor": "Checkbox",
+            "name": "loop",
+            "rank": 2
+        },
+        "ABn": {
+            "caption": "Slider BG Color",
+            "default_val": "rgba(245, 245, 245, 1)",
+            "editor": "Color",
+            "name": "bg_color",
+            "rank": 5
+        },
+        "ABo": {
+            "caption": "Slider Thumb Color",
+            "default_val": "rgba(51, 181, 229, 1)",
+            "editor": "Color",
+            "name": "slider_color",
+            "rank": 6
+        },
+        "ABp": {
+            "caption": "Show Audio Slider?",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "useprogress",
+            "rank": 4,
+            "value": "boolean"
+        },
+        "ABq": {
+            "caption": "--- Slider Settings ---",
+            "editor": "Label",
+            "name": "info",
+            "rank": 3
+        }
+    },
+    "icon": "ion-headphone",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "ABr": {
+            "caption": "Current Time String",
+            "doc": "Current audio playing time (in mm:ss format)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\nreturn \"0:00\";\n\n\n}"
+            },
+            "name": "currentstring",
+            "value": "text"
+        },
+        "ABs": {
+            "caption": "Duration String",
+            "doc": "Total audio length (in mm:ss format)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\nreturn \"0:00\"\n\n\n}"
+            },
+            "name": "durationstring",
+            "value": "text"
+        },
+        "ABt": {
+            "caption": "Duration Value",
+            "doc": "Total audio length (in seconds)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\nreturn 0;\n\n}"
+            },
+            "name": "durationnumber",
+            "value": "number"
+        },
+        "ABu": {
+            "caption": "Current Time Value",
+            "doc": "Current audio playing time (in seconds)",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\nreturn 0;\n\n}"
+            },
+            "name": "currentnumber",
+            "value": "number"
+        },
+        "ABv": {
+            "caption": "Muted Audio?",
+            "doc": "\"On\" if the audio is muted, \"Off\" if it is unmuted",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\nreturn false;\n\n}"
+            },
+            "name": "muted",
+            "value": "boolean"
+        },
+        "ABw": {
+            "caption": "Event?",
+            "doc": "It will return the current Audioplayer status. It can be \"play\", \"pause\", \"stop\", \"ended\" or \"cleared\".",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n}"
+            },
+            "name": "event",
+            "value": "text"
+        },
+        "ABx": {
+            "caption": "Errors",
+            "doc": "If there any errors, it will show here. It could be \"URL Empty\" or \"Load data error\".",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "errors",
+            "value": "text"
+        },
+        "ABy": {
+            "caption": "User Device",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "userdevice",
+            "value": "text"
+        },
+        "ABz": {
+            "caption": "Ready State",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\nreturn 0;\n\n}"
+            },
+            "name": "readystate",
+            "value": "number"
+        },
+        "ACA": {
+            "caption": "Current Source",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "currentsrc",
+            "value": "text"
+        },
+        "ACB": {
+            "caption": "Percentage Heard",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "percentage",
+            "value": "number"
+        },
+        "ACC": {
+            "caption": "Has Audio?",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "hasaudio",
+            "value": "boolean"
+        },
+        "ACD": {
+            "caption": "Volume",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\nreturn 0;\n\n}"
+            },
+            "name": "volume",
+            "value": "number"
+        }
+    }
+}

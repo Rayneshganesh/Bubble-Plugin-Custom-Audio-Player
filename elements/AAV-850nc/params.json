@@ -1,0 +1,63 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 15,
+        "width": 15
+    },
+    "display": "Audio Recorder",
+    "events": {
+        "AAP": {
+            "caption": "Uploaded",
+            "doc": "After using the Stop action, if the Url is successfully generated, the Uploaded event is triggered.",
+            "name": "uploaded"
+        },
+        "AAQ": {
+            "caption": "Time Ended",
+            "doc": "When the time defined in the \"Time Max\" field runs out, the Time Ended event is triggered, and you can trigger the Stop action. If you don't want to set a time, just leave this field empty.",
+            "name": "timeended"
+        }
+    },
+    "icon": "ion-mic-a",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAR": {
+            "caption": "Recording Status",
+            "doc": "Shows current status, recording or not.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\nreturn false\n\n}"
+            },
+            "name": "recording",
+            "value": "boolean"
+        },
+        "AAS": {
+            "caption": "URL Blob",
+            "doc": "After the file is successfully generated, you can get the URL Blob in this state.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "audio",
+            "value": "text"
+        },
+        "AAT": {
+            "caption": "Saved to Bubble URL",
+            "doc": "After the Saved event is executed, and the Url in the Bubble is successfully generated, you can get it from these states.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "audiobubble",
+            "value": "text"
+        },
+        "AAU": {
+            "caption": "Recording Time",
+            "doc": "Recording time in seconds.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    return 0\n\n\n}"
+            },
+            "name": "time",
+            "value": "number"
+        }
+    }
+}

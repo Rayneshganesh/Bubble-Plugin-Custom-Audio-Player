@@ -1,0 +1,13 @@
+{
+    "caption": "Current Time",
+    "doc": "Choose the audio at a specific time",
+    "fields": {
+        "ABe": {
+            "caption": "Current Time",
+            "editor": "DynamicValue",
+            "name": "time",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

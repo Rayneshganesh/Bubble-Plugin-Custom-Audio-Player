@@ -1,0 +1,13 @@
+{
+    "caption": "Skip Ahead",
+    "doc": "Fast forward the audio in seconds",
+    "fields": {
+        "ABc": {
+            "caption": "Fast Forward Seconds",
+            "editor": "DynamicValue",
+            "name": "seconds",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

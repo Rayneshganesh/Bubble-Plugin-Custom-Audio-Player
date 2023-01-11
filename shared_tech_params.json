@@ -1,0 +1,12 @@
+{
+    "assets": {
+        "ACF": {
+            "name": "index.js",
+            "url": "//meta.cdn.bubble.io/f1673032508022x353995413498335900/index.js"
+        }
+    },
+    "dependencies": {
+        "plugin_api_version": 3,
+        "use_jquery": true
+    }
+}

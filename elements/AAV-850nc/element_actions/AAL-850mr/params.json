@@ -1,0 +1,14 @@
+{
+    "caption": "Download",
+    "doc": "Download audio File",
+    "fields": {
+        "AAM": {
+            "caption": "Filename",
+            "doc": "Set the file name for the download. Just the name, no need to add \".mp3\"",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

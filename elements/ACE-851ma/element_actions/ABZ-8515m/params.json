@@ -1,0 +1,13 @@
+{
+    "caption": "Skip Back",
+    "doc": "Backward track in seconds",
+    "fields": {
+        "ABa": {
+            "caption": "Back Seconds",
+            "editor": "DynamicValue",
+            "name": "seconds",
+            "rank": 0,
+            "value": "number"
+        }
+    }
+}

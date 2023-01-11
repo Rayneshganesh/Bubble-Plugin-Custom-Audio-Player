@@ -1,0 +1,23 @@
+{
+    "caption": "Stop",
+    "doc": "Stop recording audio",
+    "fields": {
+        "AAJ": {
+            "caption": "Save to Bubble",
+            "default_val": false,
+            "doc": "Save the audio file to the Bubble database.",
+            "editor": "Checkbox",
+            "name": "save",
+            "rank": 0
+        },
+        "AAK": {
+            "caption": "Filename",
+            "doc": "Set the name you want the file to be saved to. Just the name, no need to add \".mp3\". Only if the \"Save to Bubble\" checkbox is checked. ",
+            "editor": "DynamicValue",
+            "name": "filename",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        }
+    }
+}
